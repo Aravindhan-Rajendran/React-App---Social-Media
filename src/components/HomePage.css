@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: "Montserrat", sans-serif;;
+}
+
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  justify-content: center;
+  margin-top: 0px; /* Adjusted margin-top to accommodate fixed navbar height */
+}
+
+#search {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  padding: 1rem;
+  position: relative; /* Relative positioning to stay within the flow */
+  width: 90%; /* Responsive width */
+  border-radius: 8px; /* Optional border radius */
+  margin: auto;
+}
+
+#search h1 {
+  font-size: 1.5rem; /* Font size for heading */
+  margin: 0 1rem 0 0; /* Margin to the right of the heading */
+}
+
+#search span {
+  display: flex;
+  align-items: center; /* Center icon vertically */
+  margin-right: 0.5rem; /* Margin to the right of the icon */
+}
+
+#search svg {
+  fill: #263238; /* Icon color */
+}
+
+#search input {
+  flex: 1; /* Take up remaining space */
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin: 0 0 8px;
+}
+
+.card-body {
+  font-size: 0.875rem;
+  margin: 0 0 16px;
+}
+
+.read-more {
+  color: #F05A22;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    margin-top: 80px; /* Adjusted margin-top for smaller screens */
+  }
+
+  #search {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    margin-top: 2rem; /* Adjusted margin-top for smaller screens */
+    padding: 0.5rem; /* Adjusted padding for smaller screens */
+  }
+
+  #search h1 {
+    font-size: 1.25rem; /* Adjusted font size for heading */
+    margin-bottom: 1rem; /* Margin below heading on smaller screens */
+  }
+
+  #search input {
+    font-size: 0.875rem; /* Adjusted font size for input */
+  }
+
+  .card {
+    max-width: 100%; /* Card takes full width on smaller screens */
+  }
+}

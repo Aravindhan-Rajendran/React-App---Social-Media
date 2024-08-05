@@ -1,0 +1,173 @@
+.detail-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.top-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  padding: 16px;
+  height: 100px;
+  margin-top: 150px;
+}
+
+.top-container h1 {
+  margin: 0; /* Remove default margin */
+}
+
+.top-container .MuiButton-root {
+  padding: 0; /* Remove default padding */
+}
+
+.detail-container {
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column; /* Stack image and SVGs vertically */
+  align-items: center; /* Center items horizontally */
+  width: 100%;
+}
+
+.detail-image {
+  width: 100%;
+  max-width: 600px; /* Set a max-width for better responsiveness */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5%;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: center; /* Center SVGs horizontally */
+  margin-top: 16px; /* Space between image and SVGs */
+}
+
+.svg-container img {
+  margin: 0 8px; /* Space between icons */
+}
+
+#title {
+  width: 100%; /* Ensure title div takes full width */
+  text-align: center; /* Center text */
+}
+
+.button-container {
+  margin-bottom: 16px; /* Space between buttons and content */
+}
+
+#class1, #class2 {
+  margin: 0 8px; /* Space between buttons */
+  padding: 8px 16px; /* Add padding for better button appearance */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+#class1 {
+  background-color: white;
+  color: black;
+}
+
+#class1:hover {
+  background-color: #F05A22;
+  color: white;
+}
+
+#class2 {
+  background-color: white;
+  color: black;
+}
+
+#class2:hover {
+  background-color: #F05A22;
+  color: white;
+}
+
+.detail-title {
+  font-size: 2rem;
+  margin: 0 0 16px;
+}
+
+.detail-body {
+  font-size: 1rem;
+  margin: 0 0 16px;
+}
+
+.detail-userId {
+  font-size: 0.875rem;
+  color: #555;
+  font-weight: 900;
+}
+
+/* More Posts Section */
+.more-posts {
+  padding: 16px;
+}
+
+.more-posts h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 16px;
+  padding: 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin: 8px 0;
+}
+
+.card-body {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+.read-more {
+  color: #F05A22;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for More Posts */
+@media (min-width: 768px) {
+  .more-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    margin: 16px;
+  }
+}
